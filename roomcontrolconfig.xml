@@ -1,0 +1,84 @@
+<Extensions>
+  <Version>1.5</Version>
+  <Panel>
+    <PanelId>panel_light</PanelId>
+    <Type>Statusbar</Type>
+    <Icon>Lightbulb</Icon>
+    <Order>3</Order>
+    <Color>#07C1E4</Color>
+    <Name>Hue Go</Name>
+    <Page>
+      <Name>Set Philips Hue</Name>
+      <Row>
+        <Name>Turn on/off:</Name>
+        <Widget>
+          <WidgetId>buttonOnOff</WidgetId>
+          <Type>ToggleButton</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Choose hue:</Name>
+        <Widget>
+          <WidgetId>hueSlider</WidgetId>
+          <Type>Slider</Type>
+          <Options>size=4</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name>Choose color:</Name>
+        <Widget>
+          <WidgetId>groupButton</WidgetId>
+          <Type>GroupButton</Type>
+          <Options>size=4</Options>
+          <ValueSpace>
+            <Value>
+              <Key>red</Key>
+              <Name>Red</Name>
+            </Value>
+            <Value>
+              <Key>green</Key>
+              <Name>Green</Name>
+            </Value>
+            <Value>
+              <Key>blue</Key>
+              <Name>Blue</Name>
+            </Value>
+          </ValueSpace>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+    <Page>
+      <Name>Settings</Name>
+      <Row>
+        <Name>IP address of the Hue bridge:</Name>
+        <Widget>
+          <WidgetId>txtIpAddress</WidgetId>
+          <Name>192.168.255.255</Name>
+          <Type>Text</Type>
+          <Options>size=2;fontSize=normal;align=center</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>btnEditIPAddress</WidgetId>
+          <Name>Edit</Name>
+          <Type>Button</Type>
+          <Options>size=1</Options>
+        </Widget>
+      </Row>
+      <Row>
+        <Name/>
+      </Row>
+      <Row>
+        <Name/>
+        <Widget>
+          <WidgetId>txtVersion</WidgetId>
+          <Name/>
+          <Type>Text</Type>
+          <Options>size=4;fontSize=small;align=right</Options>
+        </Widget>
+      </Row>
+      <Options/>
+    </Page>
+  </Panel>
+</Extensions>
